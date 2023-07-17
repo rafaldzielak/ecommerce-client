@@ -1,5 +1,4 @@
 import { Billboard as BillboardT } from "@/types";
-import { data } from "autoprefixer";
 import React, { FC } from "react";
 
 interface BillboardProps {

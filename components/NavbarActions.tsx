@@ -3,13 +3,10 @@
 import React, { useEffect, useState } from "react";
 import Button from "./ui/Button";
 import { ShoppingBag } from "lucide-react";
+import useIsMounted from "@/hooks/useIsMounted";
 
 const NavbarActions = () => {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    if (!isMounted) setIsMounted(true);
-  }, [isMounted]);
+  const isMounted = useIsMounted();
 
   if (!isMounted) return null;
 
